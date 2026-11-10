@@ -138,6 +138,35 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(15,15,19,0.9
 .fu.vis{opacity:1;transform:translateY(0)}
 footer{text-align:center;padding:22px;font-size:12px;color:rgba(255,255,255,0.2);border-top:1px solid var(--border)}
 @media(max-width:768px){.hi{grid-template-columns:1fr}.hcard{display:none}.agrid{grid-template-columns:1fr}.nl{display:none}.csec{padding:28px 20px}}
+
+/* Premium portfolio refinement — preserves all original sections and media */
+:root{--blue:#70ded3;--blue2:#66a6ff;--gold:#d8c18a;--bg:#080f1c;--surface:rgba(17,29,47,.82);--border:rgba(151,184,218,.17);--text:#f2f6fc;--sec:#aab9cc;--green:#70ded3}
+body{background:radial-gradient(ellipse at 12% 8%,rgba(49,112,133,.22),transparent 36%),radial-gradient(ellipse at 88% 18%,rgba(87,91,153,.18),transparent 32%),linear-gradient(180deg,#0a1423 0%,#080f1c 55%,#0b1726 100%);background-attachment:fixed;color:var(--text);line-height:1.68}
+nav{background:rgba(7,14,25,.84);backdrop-filter:blur(22px);border-bottom:1px solid rgba(151,184,218,.16);box-shadow:0 8px 30px rgba(0,0,0,.18)}
+.nv{max-width:1180px;height:68px}
+.logo{font-size:19px;letter-spacing:.04em}.logo span{color:var(--blue)}
+.nl{gap:5px}.nl a{font-size:13px;color:#b9c7d8;padding:8px 12px;border:1px solid transparent}
+.nl a:hover{color:#fff;background:rgba(112,222,211,.09);border-color:rgba(112,222,211,.18)}
+.nhire{background:linear-gradient(135deg,#287e91,#4c83c9);border:1px solid rgba(170,224,240,.25);border-radius:10px;box-shadow:0 8px 22px rgba(36,116,148,.22);padding:9px 18px}
+.hero{background:radial-gradient(ellipse at 72% 45%,rgba(68,145,173,.13),transparent 54%),radial-gradient(ellipse at 25% 10%,rgba(94,105,180,.10),transparent 44%);padding-top:105px}
+.hi{max-width:1180px;gap:64px}
+.ht h1{letter-spacing:-2px;text-shadow:0 8px 35px rgba(0,0,0,.22)}
+.htag{background:rgba(112,222,211,.09);border-color:rgba(112,222,211,.24);color:#8fe8df}
+.hcard,.post,.csec{background:linear-gradient(145deg,rgba(22,37,59,.94),rgba(13,24,40,.92));border-color:rgba(151,184,218,.19);box-shadow:0 18px 48px rgba(0,0,0,.22)}
+.hcard{border-radius:22px;backdrop-filter:blur(12px)}
+.main{max-width:1180px;padding-top:82px;padding-bottom:82px}
+.sh2 .lbl{color:#78d9d3;letter-spacing:.16em}
+.sh2 h2,.csec h2{letter-spacing:-1px}
+.ft{background:rgba(22,37,59,.76);border-color:rgba(151,184,218,.17);color:#b7c6d8}
+.ft:hover,.ft.on{background:linear-gradient(135deg,#287e91,#4c83c9);border-color:transparent}
+.post{border-radius:16px;box-shadow:0 10px 28px rgba(0,0,0,.16)}
+.post:hover{border-color:rgba(112,222,211,.42);box-shadow:0 18px 42px rgba(0,0,0,.32)}
+.csec{border-radius:22px}
+.csec::before{background:linear-gradient(90deg,#70ded3,#8daeff,#d8c18a)}
+a:focus-visible,.ft:focus-visible{outline:2px solid #70ded3;outline-offset:3px}
+@media(max-width:768px){.nv{height:auto;min-height:62px;padding:10px 16px}.nl{gap:1px}.nl a{font-size:11px;padding:6px 7px}.hero{padding-top:100px}.hi{gap:28px}}
+@media(max-width:560px){.nv{flex-wrap:wrap;gap:8px}.nl{order:3;width:100%;justify-content:center;flex-wrap:wrap}.nhire{margin-left:auto}.main{padding:58px 18px}}
+
 </style>
 </head>
 <body>
@@ -150,6 +179,7 @@ footer{text-align:center;padding:22px;font-size:12px;color:rgba(255,255,255,0.2)
       <a href="#about">About</a>
       <a href="#it">IT Cases</a>
       <a href="#skills">Skills</a>
+      <a href="projects.html">Projects</a>
       <a href="#contact">Contact</a>
     </div>
     <a href="mailto:zkj789@gmail.com" class="nhire">Hire Me</a>
