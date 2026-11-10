@@ -13,36 +13,240 @@ a{color:inherit}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}.top{paddi
 section{padding:26px 0 38px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:20px}.section-head h2{font-size:1.65rem;margin:0}.section-head p{color:var(--muted);margin:4px 0 0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:linear-gradient(155deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:17px;padding:21px;display:flex;flex-direction:column;min-height:250px;transition:transform .18s,border-color .18s}.card:hover{transform:translateY(-3px);border-color:#4e9f9b}.tag{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;color:var(--accent);font-weight:800}.card h3{font-size:1.12rem;line-height:1.35;margin:10px 0}.card p{color:var(--muted);font-size:.92rem;margin:0 0 18px}.card .foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px}.link{font-size:.9rem;font-weight:750;color:var(--text);text-decoration:none}.note{font-size:.75rem;color:#c7d2e2;border:1px solid #43536a;padding:4px 8px;border-radius:99px}
 .callout{margin:26px 0 56px;padding:26px;border:1px solid var(--line);border-radius:18px;background:#0e1b2c}.callout p{color:var(--muted)}.callout a{color:var(--accent);font-weight:700;text-decoration:none}.bottom{border-top:1px solid var(--line);padding:25px 0 38px;color:var(--muted);font-size:.88rem}
 @media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:570px){.grid{grid-template-columns:1fr}.hero{padding-top:54px}.nav a{margin-left:10px}}
+
+/* Code-first project showcase */
+.code-link{display:inline-flex;align-items:center;gap:7px;color:var(--accent);font-size:.84rem;font-weight:800;text-decoration:none;margin:2px 0 12px}
+.demo-section{padding:34px 0 42px;border-top:1px solid var(--line)}
+.demo-intro{max-width:760px;color:var(--muted)}
+.demo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.demo-card{background:linear-gradient(155deg,#14243a,#0d192a);border:1px solid var(--line);border-radius:18px;padding:20px;min-width:0}
+.demo-card h3{margin:4px 0 8px;font-size:1.18rem}
+.demo-card p{color:var(--muted);font-size:.9rem}
+.code-panel{border:1px solid #344a65;border-radius:12px;overflow:hidden;margin:14px 0;background:#07101c}
+.code-panel summary{cursor:pointer;padding:11px 14px;color:#9de5df;font-weight:800;background:#102139}
+.code-panel pre{margin:0;padding:14px;overflow:auto;max-height:220px;color:#dceaff;font:12px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre}
+.demo-window{background:#f6f8fc;color:#172338;border-radius:13px;padding:16px;margin-top:14px}
+.demo-window h4{margin:0 0 10px;color:#10233c}
+.demo-window label{display:block;font-size:.82rem;font-weight:700;margin:8px 0 4px;color:#34465e}
+.demo-window input,.demo-window select{width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:8px;background:white;color:#142338}
+.demo-window button{border:0;border-radius:8px;background:#0f766e;color:white;font-weight:800;padding:10px 14px;margin:10px 6px 0 0;cursor:pointer}
+.demo-window button.secondary{background:#334155}
+.demo-result{margin-top:12px;padding:11px;border-radius:9px;background:#e7f4f2;color:#123d3a;min-height:42px;font-size:.9rem;overflow-wrap:anywhere}
+.demo-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.82rem}
+.demo-table th,.demo-table td{padding:7px;border-bottom:1px solid #d8e0ea;text-align:left}
+.demo-image{display:block;width:100%;height:180px;object-fit:cover;border-radius:11px;margin-top:15px;border:1px solid #33465f}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.gallery-item{background:var(--panel);border:1px solid var(--line);padding:10px;border-radius:13px}
+.gallery-item img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:8px}
+.gallery-item p{margin:8px 2px 2px;color:var(--muted);font-size:.83rem}
+.task-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.task-item{padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:#0d1a2b}
+.task-item strong{display:block;color:var(--accent);font-size:.78rem}
+.task-item span{font-size:.88rem}
+@media(max-width:760px){.demo-grid,.gallery-grid,.task-list{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap nav"><a class="brand" href="./" style="text-decoration:none">ZKJ <span style="color:var(--accent)">/ PROJECTS</span></a><nav aria-label="Main navigation"><a href="./">Home</a><a href="#software">Software & AI</a><a href="#professional">Professional</a><a href="#learning">Learning</a><a href="https://github.com/zulqarnainjadoon99">GitHub</a></nav></div></header>
+<header class="top"><div class="wrap nav"><a class="brand" href="./" style="text-decoration:none">ZKJ <span style="color:var(--accent)">/ PROJECTS</span></a><nav aria-label="Main navigation"><a href="./">Home</a><a href="#software">Software & AI</a><a href="#professional">Professional</a><a href="#learning">Learning</a><a href="#live-demos">Live Demos</a><a href="#visual-gallery">Pictures</a><a href="https://github.com/zulqarnainjadoon99">GitHub</a></nav></div></header>
 <main class="wrap">
 <div class="hero"><div class="eyebrow">Selected work · Project directory</div><h1>Projects built around technology, AI and better workflows.</h1><p>A collection of software prototypes, AI-assisted tools, IT operations case studies and structured professional learning by <strong>Zulqarnain Khan Jadoon</strong>.</p><div class="stats"><div class="stat"><strong>13</strong> repositories showcased</div><div class="stat"><strong>8</strong> AI course areas</div><div class="stat"><strong>16</strong> AI practical tasks</div><div class="stat"><strong>27</strong> documented case-study tasks/topics</div></div></div>
 
 <section id="software"><div class="section-head"><div><h2>Software, AI & interactive tools</h2><p>Application prototypes and practical development projects.</p></div></div><div class="grid">
-<article class="card"><span class="tag">AI productivity · Streamlit</span><h3>AutoMind AI</h3><p>A multi-purpose workspace concept for office workflows, task management, project planning, document tools and IT support assistance.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/AutoMind-AI">View repository ↗</a><span class="note">Application</span></div></article>
-<article class="card"><span class="tag">3D visualization · Python</span><h3>PlotVision AI</h3><p>A conceptual building-layout tool using plot dimensions, room configuration, area conversion and interactive 3D visualization.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/PlotVision-AI">View repository ↗</a><span class="note">Prototype</span></div></article>
-<article class="card"><span class="tag">Workflow intelligence · Gemini</span><h3>NEUROCORE</h3><p>A web workspace for workflow analysis, risk review, improvement insights and report management, with a Gemini integration layer.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/NEUROCORE">View repository ↗</a><span class="note">Development</span></div></article>
-<article class="card"><span class="tag">Campus administration · C++20</span><h3>SmartID Guardian</h3><p>A console-based student ID and campus activity management prototype with registration, verification, lost-card handling, CSV export and audit history.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/SmartID-Guardian">View repository ↗</a><span class="note">Prototype</span></div></article>
-<article class="card"><span class="tag">Data visualization · Streamlit</span><h3>GDP Dashboard</h3><p>A learning dashboard for exploring historical GDP data, comparing countries and viewing economic indicators.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/gdp-dashboard">View repository ↗</a><span class="note">Data project</span></div></article>
-<article class="card"><span class="tag">Prompt engineering</span><h3>AI Prompt Builder</h3><p>A structured prompt-building utility that helps turn task requirements into clearer, more organized AI prompts.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/ai-prompt-builder">View repository ↗</a><span class="note">AI utility</span></div></article>
-<article class="card"><span class="tag">Python · IT operations</span><h3>Python Projects</h3><p>Includes an IT support ticket and inventory management learning project using Python and a local database.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/python-projects">View repository ↗</a><span class="note">Programming</span></div></article>
-<article class="card"><span class="tag">C++ programming</span><h3>C++ Projects</h3><p>Programming practice repository including a console-based ATM banking application and core C++ concepts.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/cpp-projects">View repository ↗</a><span class="note">Programming</span></div></article>
+<article class="card"><a class="code-link" href="https://github.com/zulqarnainjadoon99" target="_blank" rel="noopener">⌘ Explore project source code ↗</a><span class="tag">AI productivity · Streamlit</span><h3>AutoMind AI</h3><p>A multi-purpose workspace concept for office workflows, task management, project planning, document tools and IT support assistance.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/AutoMind-AI">View repository ↗</a><span class="note">Application</span></div></article>
+<article class="card"><a class="code-link" href="https://github.com/zulqarnainjadoon99" target="_blank" rel="noopener">⌘ Explore project source code ↗</a><span class="tag">3D visualization · Python</span><h3>PlotVision AI</h3><p>A conceptual building-layout tool using plot dimensions, room configuration, area conversion and interactive 3D visualization.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/PlotVision-AI">View repository ↗</a><span class="note">Prototype</span></div></article>
+<article class="card"><a class="code-link" href="https://github.com/zulqarnainjadoon99" target="_blank" rel="noopener">⌘ Explore project source code ↗</a><span class="tag">Workflow intelligence · Gemini</span><h3>NEUROCORE</h3><p>A web workspace for workflow analysis, risk review, improvement insights and report management, with a Gemini integration layer.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/NEUROCORE">View repository ↗</a><span class="note">Development</span></div></article>
+<article class="card"><a class="code-link" href="https://github.com/zulqarnainjadoon99" target="_blank" rel="noopener">⌘ Explore project source code ↗</a><span class="tag">Campus administration · C++20</span><h3>SmartID Guardian</h3><p>A console-based student ID and campus activity management prototype with registration, verification, lost-card handling, CSV export and audit history.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/SmartID-Guardian">View repository ↗</a><span class="note">Prototype</span></div></article>
+<article class="card"><a class="code-link" href="https://github.com/zulqarnainjadoon99" target="_blank" rel="noopener">⌘ Explore project source code ↗</a><span class="tag">Data visualization · Streamlit</span><h3>GDP Dashboard</h3><p>A learning dashboard for exploring historical GDP data, comparing countries and viewing economic indicators.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/gdp-dashboard">View repository ↗</a><span class="note">Data project</span></div></article>
+<article class="card"><a class="code-link" href="https://github.com/zulqarnainjadoon99" target="_blank" rel="noopener">⌘ Explore project source code ↗</a><span class="tag">Prompt engineering</span><h3>AI Prompt Builder</h3><p>A structured prompt-building utility that helps turn task requirements into clearer, more organized AI prompts.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/ai-prompt-builder">View repository ↗</a><span class="note">AI utility</span></div></article>
+<article class="card"><a class="code-link" href="https://github.com/zulqarnainjadoon99" target="_blank" rel="noopener">⌘ Explore project source code ↗</a><span class="tag">Python · IT operations</span><h3>Python Projects</h3><p>Includes an IT support ticket and inventory management learning project using Python and a local database.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/python-projects">View repository ↗</a><span class="note">Programming</span></div></article>
+<article class="card"><a class="code-link" href="https://github.com/zulqarnainjadoon99" target="_blank" rel="noopener">⌘ Explore project source code ↗</a><span class="tag">C++ programming</span><h3>C++ Projects</h3><p>Programming practice repository including a console-based ATM banking application and core C++ concepts.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/cpp-projects">View repository ↗</a><span class="note">Programming</span></div></article>
 </div></section>
 
 <section id="professional"><div class="section-head"><div><h2>Professional case studies</h2><p>Structured demonstrations of planning, documentation and operational processes.</p></div></div><div class="grid">
-<article class="card"><span class="tag">Project coordination · 8 tasks</span><h3>Corporate Office Setup & Project Management</h3><p>An end-to-end simulated office setup case study covering planning, scope, scheduling, resources, risk, communication and project closure.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/Corporate-Office-Setup-Project">View repository ↗</a><span class="note">Simulated case study</span></div></article>
-<article class="card"><span class="tag">IT operations · 17 topics</span><h3>IT Support & Infrastructure Management</h3><p>A documented case study covering service desk operations, troubleshooting, infrastructure readiness, security awareness and support processes.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/IT-Support-Infrastructure-Management">View repository ↗</a><span class="note">Simulated case study</span></div></article>
-<article class="card"><span class="tag">Digital marketing · 2 tasks</span><h3>Digital Marketing & E-commerce</h3><p>Practical campaign and online-store launch planning, including social media marketing and product launch documentation.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio">View repository ↗</a><span class="note">Simulated case study</span></div></article>
+<article class="card"><a class="code-link" href="https://github.com/zulqarnainjadoon99" target="_blank" rel="noopener">⌘ Explore project source code ↗</a><span class="tag">Project coordination · 8 tasks</span><h3>Corporate Office Setup & Project Management</h3><p>An end-to-end simulated office setup case study covering planning, scope, scheduling, resources, risk, communication and project closure.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/Corporate-Office-Setup-Project">View repository ↗</a><span class="note">Simulated case study</span></div></article>
+<article class="card"><a class="code-link" href="https://github.com/zulqarnainjadoon99" target="_blank" rel="noopener">⌘ Explore project source code ↗</a><span class="tag">IT operations · 17 topics</span><h3>IT Support & Infrastructure Management</h3><p>A documented case study covering service desk operations, troubleshooting, infrastructure readiness, security awareness and support processes.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/IT-Support-Infrastructure-Management">View repository ↗</a><span class="note">Simulated case study</span></div></article>
+<article class="card"><a class="code-link" href="https://github.com/zulqarnainjadoon99" target="_blank" rel="noopener">⌘ Explore project source code ↗</a><span class="tag">Digital marketing · 2 tasks</span><h3>Digital Marketing & E-commerce</h3><p>Practical campaign and online-store launch planning, including social media marketing and product launch documentation.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio">View repository ↗</a><span class="note">Simulated case study</span></div></article>
 </div></section>
 
 <section id="learning"><div class="section-head"><div><h2>AI learning & supporting work</h2><p>Course-aligned practical tasks and selected documentation.</p></div></div><div class="grid">
-<article class="card"><span class="tag">8 courses · 16 tasks</span><h3>Google AI Professional Portfolio</h3><p>Eight AI course areas with practical tasks across fundamentals, planning, research, communication, content, data analysis, app building and deployment.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/Google-AI-Professional-Portfolio">View repository ↗</a><span class="note">Learning portfolio</span></div></article>
-<article class="card"><span class="tag">Documentation library</span><h3>Professional Documents</h3><p>A collection of supporting documents, including AI tools, IT support, marketing and project management materials.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/documents">View repository ↗</a><span class="note">Resources</span></div></article>
+<article class="card"><a class="code-link" href="https://github.com/zulqarnainjadoon99" target="_blank" rel="noopener">⌘ Explore project source code ↗</a><span class="tag">8 courses · 16 tasks</span><h3>Google AI Professional Portfolio</h3><p>Eight AI course areas with practical tasks across fundamentals, planning, research, communication, content, data analysis, app building and deployment.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/Google-AI-Professional-Portfolio">View repository ↗</a><span class="note">Learning portfolio</span></div></article>
+<article class="card"><a class="code-link" href="https://github.com/zulqarnainjadoon99" target="_blank" rel="noopener">⌘ Explore project source code ↗</a><span class="tag">Documentation library</span><h3>Professional Documents</h3><p>A collection of supporting documents, including AI tools, IT support, marketing and project management materials.</p><div class="foot"><a class="link" href="https://github.com/zulqarnainjadoon99/documents">View repository ↗</a><span class="note">Resources</span></div></article>
 </div></section>
 
 <div class="callout"><h2>About the work</h2><p>Project descriptions distinguish software prototypes, learning exercises and simulated case studies. Simulated scenarios are presented for portfolio demonstration and are not claimed as verified client engagements or live production deployments.</p><p>Explore the complete source code and documentation on <a href="https://github.com/zulqarnainjadoon99">GitHub</a>, or return to the <a href="./">main portfolio homepage</a>.</p></div>
+
+<section class="demo-section" id="live-demos">
+  <div class="section-head"><div><h2>Code First · Interactive Demo Lab</h2><p>Code preview upar, browser demo neeche — try the features directly.</p></div></div>
+  <p class="demo-intro">These are browser-based demonstration versions of selected project workflows. They let visitors test the idea instantly. The original Python/Streamlit, Gradio and C++ source remains in each linked GitHub repository; these browser previews do not pretend to run server-side Python or C++.</p>
+  <div class="demo-grid">
+    <article class="demo-card">
+      <span class="tag">01 · Workflow productivity</span><h3>AutoMind AI — Task Workspace</h3>
+      <p>Try adding a task, changing its status and tracking a small office workflow.</p>
+      <details class="code-panel"><summary>View demo code first</summary><pre><code>const tasks = [];
+function addTask(title, priority) {
+  if (!title.trim()) return;
+  tasks.push({ title, priority, status: "Pending" });
+  renderTasks();
+}
+function completeTask(index) {
+  tasks[index].status = "Completed";
+  renderTasks();
+}</code></pre></details>
+      <div class="demo-window">
+        <h4>Task workspace preview</h4>
+        <label for="am-title">Task title</label><input id="am-title" placeholder="e.g. Prepare weekly IT report">
+        <label for="am-priority">Priority</label><select id="am-priority"><option>Medium</option><option>High</option><option>Low</option></select>
+        <button onclick="addAutoTask()">+ Add task</button>
+        <div id="am-result" class="demo-result">No tasks added yet.</div>
+      </div>
+      <a class="link" href="https://github.com/zulqarnainjadoon99/AutoMind-AI" target="_blank" rel="noopener">Open original Python source ↗</a>
+    </article>
+
+    <article class="demo-card">
+      <span class="tag">02 · 3D planning concept</span><h3>PlotVision AI — Plot Area Calculator</h3>
+      <p>Enter plot dimensions to calculate square feet, Marla and Kanal. This is a lightweight browser preview; the original project includes an interactive Plotly 3D model.</p>
+      <details class="code-panel"><summary>View demo code first</summary><pre><code>const area = length * width;
+const marla = area / 272.25;
+const kanal = area / 5445;
+showResults({ area, marla, kanal });</code></pre></details>
+      <div class="demo-window">
+        <h4>Plot area preview</h4>
+        <label for="pv-length">Length (feet)</label><input id="pv-length" type="number" min="1" value="40">
+        <label for="pv-width">Width (feet)</label><input id="pv-width" type="number" min="1" value="30">
+        <button onclick="calculatePlot()">Calculate area</button>
+        <div id="pv-result" class="demo-result">40 × 30 ft = 1,200 sq ft · 4.41 Marla · 0.22 Kanal</div>
+      </div>
+      <img class="demo-image" src="https://raw.githubusercontent.com/zulqarnainjadoon99/PlotVision-AI/main/Code_Generated_Image.jpg" alt="PlotVision AI conceptual 3D building design">
+      <a class="link" href="https://github.com/zulqarnainjadoon99/PlotVision-AI" target="_blank" rel="noopener">Open original Python / Gradio source ↗</a>
+    </article>
+
+    <article class="demo-card">
+      <span class="tag">03 · Campus security</span><h3>SmartID Guardian — ID Verification</h3>
+      <p>Register a sample student and test ID verification and campus entry/exit rules. Demo records stay only in this browser session.</p>
+      <details class="code-panel"><summary>View demo code first</summary><pre><code>function verifyCard(student) {
+  if (!student) return "Student not found";
+  if (student.status !== "ACTIVE") return "Access denied";
+  return "ID verified";
+}
+function toggleCampus(student) {
+  student.inside = !student.inside;
+}</code></pre></details>
+      <div class="demo-window">
+        <h4>Student ID preview</h4>
+        <label for="sid-name">Student name</label><input id="sid-name" placeholder="Enter student name">
+        <label for="sid-roll">Roll number</label><input id="sid-roll" placeholder="e.g. CS-101">
+        <button onclick="registerStudentDemo()">Register sample ID</button>
+        <button class="secondary" onclick="verifyStudentDemo()">Verify ID</button>
+        <button class="secondary" onclick="toggleStudentDemo()">Campus entry / exit</button>
+        <div id="sid-result" class="demo-result">No sample student registered.</div>
+      </div>
+      <a class="link" href="https://github.com/zulqarnainjadoon99/SmartID-Guardian" target="_blank" rel="noopener">Open original C++ source ↗</a>
+    </article>
+
+    <article class="demo-card">
+      <span class="tag">04 · AI decision support</span><h3>Nexus Intelligence — Digital Twin</h3>
+      <p>Adjust workforce, marketing spend and automation to see an illustrative six-month scenario. Values are synthetic demo calculations, not business forecasts.</p>
+      <details class="code-panel"><summary>View demo code first</summary><pre><code>const base = marketingBudget * 12 + headcount * 3;
+const revenue = base * automationFactor * marketFactor;
+const cost = (headcount * 4 + marketingBudget * 8)
+             * (1 - automation / 200);
+const net = revenue - cost;</code></pre></details>
+      <div class="demo-window">
+        <h4>Digital twin scenario preview</h4>
+        <label for="nx-head">Workforce headcount</label><input id="nx-head" type="range" min="50" max="1000" value="250" oninput="runNexusDemo()">
+        <label for="nx-budget">Marketing budget ($K/month)</label><input id="nx-budget" type="range" min="10" max="200" value="50" oninput="runNexusDemo()">
+        <label for="nx-auto">Automation level (%)</label><input id="nx-auto" type="range" min="10" max="100" value="65" oninput="runNexusDemo()">
+        <div id="nx-result" class="demo-result">Adjust sliders to simulate a scenario.</div>
+      </div>
+      <p><a class="link" href="https://github.com/zulqarnainjadoon99" target="_blank" rel="noopener">View GitHub profile and AI projects ↗</a></p>
+    </article>
+  </div>
+</section>
+
+<section id="ai-tasks">
+  <div class="section-head"><div><h2>Google AI Professional Portfolio</h2><p>8 course areas · 16 practical tasks documented in your repository.</p></div></div>
+  <div class="task-list">
+    <div class="task-item"><strong>01 · AI Fundamentals</strong><span>Prompt Engineering · Responsible AI</span></div>
+    <div class="task-item"><strong>02 · Brainstorming & Planning</strong><span>Business Brainstorming · IT Project Planning</span></div>
+    <div class="task-item"><strong>03 · Research & Insights</strong><span>Source Verification · Market Research</span></div>
+    <div class="task-item"><strong>04 · Writing & Communicating</strong><span>IT Support Communication · Incident Reporting</span></div>
+    <div class="task-item"><strong>05 · Content Creation</strong><span>Social Media Campaign · Brand Identity</span></div>
+    <div class="task-item"><strong>06 · Data Analysis</strong><span>IT Performance Analysis · BI Dashboard Blueprint</span></div>
+    <div class="task-item"><strong>07 · App Building</strong><span>IT Support System Development · Python Debugging</span></div>
+    <div class="task-item"><strong>08 · App Deployment</strong><span>Deployment Strategy · Application Monitoring</span></div>
+  </div>
+  <p><a class="link" href="https://github.com/zulqarnainjadoon99/Google-AI-Professional-Portfolio" target="_blank" rel="noopener">Open all 16 AI practical tasks ↗</a></p>
+</section>
+
+<section id="visual-gallery">
+  <div class="section-head"><div><h2>Project Pictures & Work Samples</h2><p>Original visual assets linked from your project repositories.</p></div></div>
+  <div class="gallery-grid">
+    <a class="gallery-item" href="https://github.com/zulqarnainjadoon99/Corporate-Office-Setup-Project" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/zulqarnainjadoon99/Corporate-Office-Setup-Project/main/Gemini_Generated_Image_9x3zht9x3zht9x3z.jpg" alt="Corporate office setup project banner"><p>Corporate Office Setup — Main Project</p></a>
+    <a class="gallery-item" href="https://github.com/zulqarnainjadoon99/Corporate-Office-Setup-Project" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/zulqarnainjadoon99/Corporate-Office-Setup-Project/main/Gemini_Generated_Image_le77ovle77ovle77.jpg" alt="Corporate office setup tasks part one"><p>Office Setup — Tasks Part 1</p></a>
+    <a class="gallery-item" href="https://github.com/zulqarnainjadoon99/Corporate-Office-Setup-Project" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/zulqarnainjadoon99/Corporate-Office-Setup-Project/main/Gemini_Generated_Image_zhwn5nzhwn5nzhwn.jpg" alt="Corporate office setup tasks part two"><p>Office Setup — Tasks Part 2</p></a>
+    <a class="gallery-item" href="https://github.com/zulqarnainjadoon99/IT-Support-Infrastructure-Management" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/zulqarnainjadoon99/IT-Support-Infrastructure-Management/main/Gemini_Generated_Image_74pk2u74pk2u74pk.jpg" alt="IT support project banner"><p>IT Support — Main Project</p></a>
+    <a class="gallery-item" href="https://github.com/zulqarnainjadoon99/IT-Support-Infrastructure-Management" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/zulqarnainjadoon99/IT-Support-Infrastructure-Management/main/Gemini_Generated_Image_lw3jc6lw3jc6lw3j.jpg" alt="IT support topics part one"><p>IT Support — Topics Part 1</p></a>
+    <a class="gallery-item" href="https://github.com/zulqarnainjadoon99/IT-Support-Infrastructure-Management" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/zulqarnainjadoon99/IT-Support-Infrastructure-Management/main/Gemini_Generated_Image_yutlppyutlppyutl.jpg" alt="IT support topics part two"><p>IT Support — Topics Part 2</p></a>
+    <a class="gallery-item" href="https://github.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio/main/Gemini_Generated_Image_6dkt3o6dkt3o6dkt.jpg" alt="Digital marketing visual one"><p>Digital Marketing — Visual 1</p></a>
+    <a class="gallery-item" href="https://github.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio/main/Gemini_Generated_Image_p2ywhyp2ywhyp2yw.jpg" alt="Digital marketing visual two"><p>Digital Marketing — Visual 2</p></a>
+    <a class="gallery-item" href="https://github.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio/main/Gemini_Generated_Image_pwna20pwna20pwna.jpg" alt="Digital marketing visual three"><p>Digital Marketing — Visual 3</p></a>
+    <a class="gallery-item" href="https://github.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio/main/Gemini_Generated_Image_q12f2vq12f2vq12f.jpg" alt="Digital marketing visual four"><p>Digital Marketing — Visual 4</p></a>
+    <a class="gallery-item" href="https://github.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio/main/Gemini_Generated_Image_s2e5vfs2e5vfs2e5.jpg" alt="Digital marketing visual five"><p>Digital Marketing — Visual 5</p></a>
+    <a class="gallery-item" href="https://github.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio/main/Gemini_Generated_Image_tn50t0tn50t0tn50.jpg" alt="Digital marketing visual six"><p>Digital Marketing — Visual 6</p></a>
+    <a class="gallery-item" href="https://github.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio" target="_blank" rel="noopener"><img loading="lazy" src="https://raw.githubusercontent.com/zulqarnainjadoon99/Digital-Marketing-Ecommerce-Portfolio/main/Gemini_Generated_Image_u46oc0u46oc0u46o.jpg" alt="Digital marketing visual seven"><p>Digital Marketing — Visual 7</p></a>
+  </div>
+</section>
+
 </main>
 <footer class="bottom"><div class="wrap">© 2026 Zulqarnain Khan Jadoon · AI · IT Support · Automation · Project Coordination</div></footer>
+
+<script>
+const autoTasks = [];
+let demoStudent = null;
+function addAutoTask(){
+  const input=document.getElementById('am-title');
+  const title=input.value.trim();
+  if(!title){document.getElementById('am-result').textContent='Please enter a task title.';return;}
+  autoTasks.push({title,priority:document.getElementById('am-priority').value,status:'Pending'});
+  input.value='';renderAutoTasks();
+}
+function renderAutoTasks(){
+  const el=document.getElementById('am-result');
+  if(!autoTasks.length){el.textContent='No tasks added yet.';return;}
+  el.innerHTML='<strong>'+autoTasks.length+' task(s)</strong><table class="demo-table"><tr><th>Task</th><th>Priority</th><th>Status</th><th>Action</th></tr>'+autoTasks.map((t,i)=>'<tr><td>'+escapeDemo(t.title)+'</td><td>'+t.priority+'</td><td>'+t.status+'</td><td><button onclick="completeAutoTask('+i+')">Complete</button></td></tr>').join('')+'</table>';
+}
+function completeAutoTask(i){autoTasks[i].status='Completed';renderAutoTasks();}
+function escapeDemo(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function calculatePlot(){
+  const l=Number(document.getElementById('pv-length').value),w=Number(document.getElementById('pv-width').value),el=document.getElementById('pv-result');
+  if(l<=0||w<=0){el.textContent='Enter positive plot dimensions.';return;}
+  const a=l*w;el.textContent=a.toLocaleString()+' sq ft · '+(a/272.25).toFixed(2)+' Marla · '+(a/5445).toFixed(3)+' Kanal';
+}
+function registerStudentDemo(){
+  const name=document.getElementById('sid-name').value.trim(),roll=document.getElementById('sid-roll').value.trim();
+  const el=document.getElementById('sid-result');
+  if(!name||!roll){el.textContent='Enter both name and roll number.';return;}
+  demoStudent={name,roll,status:'ACTIVE',inside:false};
+  el.textContent='Sample ID registered: '+name+' · '+roll+' · ACTIVE · OUTSIDE';
+}
+function verifyStudentDemo(){
+  const el=document.getElementById('sid-result');
+  if(!demoStudent){el.textContent='No student registered. Register a sample ID first.';return;}
+  el.textContent=demoStudent.status==='ACTIVE'?'ID VERIFIED · '+demoStudent.name+' · '+demoStudent.roll:'ACCESS DENIED · Card '+demoStudent.status;
+}
+function toggleStudentDemo(){
+  const el=document.getElementById('sid-result');
+  if(!demoStudent){el.textContent='Register a sample ID first.';return;}
+  if(demoStudent.status!=='ACTIVE'){el.textContent='ENTRY DENIED · Card is '+demoStudent.status;return;}
+  demoStudent.inside=!demoStudent.inside;
+  el.textContent=(demoStudent.inside?'ENTRY APPROVED':'EXIT RECORDED')+' · '+demoStudent.name+' · '+(demoStudent.inside?'INSIDE':'OUTSIDE');
+}
+function runNexusDemo(){
+  const h=Number(document.getElementById('nx-head').value),b=Number(document.getElementById('nx-budget').value),a=Number(document.getElementById('nx-auto').value);
+  const base=b*12+h*3,rev=base*(1+0.25*(a/50))*1.0,cost=(h*4+b*8)*(1-a/200),net=rev-cost;
+  document.getElementById('nx-result').innerHTML='Estimated demo revenue: <strong></html>+rev.toFixed(1)+'K</strong><br>Operating cost: <strong></html>+cost.toFixed(1)+'K</strong><br>Net result: <strong></html>+net.toFixed(1)+'K</strong><br><small>Illustrative model only · Headcount '+h+' · Automation '+a+'%</small>';
+}
+runNexusDemo();
+</script>
 </body></html>
