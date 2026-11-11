@@ -5,8 +5,8 @@ This repository contains the source files for the portfolio website published th
 ## Website Pages
 
 - **[Portfolio homepage](https://zulqarnainjadoon99.github.io/)** — the primary portfolio entry page.
-- **[Projects directory](https://zulqarnainjadoon99.github.io}/projects.html)** — a directory of 13 repository-backed projects, with additional browser-only previews for selected concepts.
-- **[Digital Universe](https://zulqarnainjadoon99.github.io}/universe.html)** — a secondary landing page featuring selected work, skills, and contact sections.
+- **[Projects directory](https://zulqarnainjadoon99.github.io/projects.html)** — a directory of 13 repository-backed projects, with additional browser-only previews for selected concepts.
+- **[Digital Universe](https://zulqarnainjadoon99.github.io/universe.html)** — a secondary landing page featuring selected work, skills, and contact sections.
 
 ## Main Source Files
 
