@@ -1,24 +1,71 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
 <defs>
- <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071426"/><stop offset=".55" stop-color="#12395b"/><stop offset="1" stop-color="#171b43"/></linearGradient>
- <linearGradient id="edge" x2="1"><stop stop-color="#42e3ed"/><stop offset="1" stop-color="#9a8cff"/></linearGradient>
- <radialGradient id="glow"><stop stop-color="#39d9ec" stop-opacity=".32"/><stop offset="1" stop-color="#39d9ec" stop-opacity="0"/></radialGradient>
- </defs>
- <rect width="1600" height="900" fill="url(#bg)"/><circle cx="1330" cy="180" r="480" fill="url(#glow)"/><circle cx="250" cy="820" r="360" fill="url(#glow)"/>
- <g opacity=".14" stroke="#9bdcf5"><path d="M0 150H1600M0 300H1600M0 450H1600M0 600H1600M0 750H1600"/><path d="M160 0V900M320 0V900M480 0V900M640 0V900M800 0V900M960 0V900M1120 0V900M1280 0V900M1440 0V900"/></g>
- <text x="105" y="160" fill="#64e8f0" font-family="Arial,sans-serif" font-size="27" font-weight="700" letter-spacing="8">ZK DIGITAL WORKSPACE</text>
- <text x="100" y="295" fill="#f5f8ff" font-family="Arial,sans-serif" font-size="92" font-weight="800">AUTOMIND AI</text>
- <text x="105" y="355" fill="#b9d9f1" font-family="Arial,sans-serif" font-size="30">OFFICE WORKFLOW · PRODUCTIVITY · MANAGEMENT</text>
- <rect x="100" y="435" width="1400" height="340" rx="30" fill="#08182c" stroke="url(#edge)" stroke-width="3"/>
- <rect x="135" y="475" width="260" height="255" rx="18" fill="#102b47" stroke="#3bd8e8" stroke-opacity=".65"/>
- <circle cx="265" cy="555" r="42" fill="#35d7e7" fill-opacity=".18" stroke="#53e3ed" stroke-width="3"/><path d="M265 528v54M238 555h54" stroke="#72edf1" stroke-width="8" stroke-linecap="round"/>
- <text x="265" y="640" text-anchor="middle" fill="#e9f8ff" font-family="Arial" font-size="23" font-weight="700">WORKSPACE</text>
- <g>
- <rect x="435" y="475" width="300" height="115" rx="16" fill="#112d49" stroke="#3bd8e8" stroke-opacity=".55"/><text x="470" y="520" fill="#71e9f0" font-family="Arial" font-size="20">TASKS &amp; PROJECTS</text><path d="M470 550h210" stroke="#d6eaff" stroke-opacity=".4" stroke-width="9" stroke-linecap="round"/>
- <rect x="765" y="475" width="300" height="115" rx="16" fill="#18264c" stroke="#9a8cff" stroke-opacity=".7"/><text x="800" y="520" fill="#c2b7ff" font-family="Arial" font-size="20">AI ASSISTANT</text><path d="M800 550h205" stroke="#e4ddff" stroke-opacity=".4" stroke-width="9" stroke-linecap="round"/>
- <rect x="1095" y="475" width="365" height="115" rx="16" fill="#123d45" stroke="#65e0c4" stroke-opacity=".65"/><text x="1130" y="520" fill="#8cf0d7" font-family="Arial" font-size="20">DOCUMENT TOOLS</text><path d="M1130 550h260" stroke="#e0fff5" stroke-opacity=".4" stroke-width="9" stroke-linecap="round"/>
- <rect x="435" y="615" width="1025" height="115" rx="16" fill="#0d2038" stroke="#6c8bb5" stroke-opacity=".45"/>
- <path d="M480 690l110-35 105 15 110-55 110 35 120-65 120 30 110-40" fill="none" stroke="url(#edge)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset=".55" stop-color="#0d2238"/><stop offset="1" stop-color="#101a35"/></linearGradient>
+ <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4de4df"/><stop offset="1" stop-color="#8da9ff"/></linearGradient>
+ <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#172b43"/><stop offset="1" stop-color="#101e32"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#36d6df" stop-opacity=".22"/><stop offset="1" stop-color="#36d6df" stop-opacity="0"/></radialGradient>
+ <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<circle cx="1390" cy="100" r="400" fill="url(#glow)"/><circle cx="180" cy="830" r="340" fill="url(#glow)"/>
+<text x="84" y="94" fill="#70e7e7" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="7">ZK DIGITAL PORTFOLIO / AI WORKSPACE</text>
+<text x="84" y="174" fill="#f5f8ff" font-family="Arial,sans-serif" font-size="66" font-weight="800" letter-spacing="-2">AutoMind AI</text>
+<text x="88" y="218" fill="#a9bfd8" font-family="Arial,sans-serif" font-size="24">A unified workspace for tasks, documents &amp; office operations</text>
+<rect x="80" y="270" width="1440" height="555" rx="26" fill="#06101f" opacity=".45" filter="url(#shadow)"/>
+<rect x="80" y="260" width="1440" height="560" rx="24" fill="url(#panel)" stroke="#37506d" stroke-width="2"/>
+<!-- top bar -->
+<path d="M80 284Q80 260 104 260H1496Q1520 260 1520 284V330H80Z" fill="#0b192b"/>
+<circle cx="115" cy="295" r="9" fill="#54e5dc"/><text x="142" y="303" fill="#eaf4ff" font-family="Arial" font-size="19" font-weight="700">AUTOMIND</text>
+<text x="1300" y="302" fill="#8fa7c2" font-family="Arial" font-size="14">WORKSPACE OVERVIEW</text>
+<!-- sidebar -->
+<rect x="100" y="350" width="245" height="445" rx="15" fill="#0a1728" stroke="#253b54"/>
+<text x="128" y="392" fill="#718ba8" font-family="Arial" font-size="12" font-weight="700" letter-spacing="2">WORKSPACE</text>
+<rect x="116" y="414" width="212" height="46" rx="9" fill="#12364a" stroke="#2b7f8d"/>
+<circle cx="140" cy="437" r="6" fill="#5ee6df"/><text x="160" y="443" fill="#e6fbff" font-family="Arial" font-size="15" font-weight="700">Dashboard</text>
+{#}
+<g font-family="Arial" font-size="14" fill="#a5b8cd">
+ <circle cx="140" cy="493" r="5" fill="#8aa3bf"/><text x="160" y="498">Task Manager</text>
+ <circle cx="140" cy="545" r="5" fill="#8aa3bf"/><text x="160" y="550">AI Assistant</text>
+ <circle cx="140" cy="597" r="5" fill="#8aa3bf"/><text x="160" y="602">Documents</text>
+ <circle cx="140" cy="649" r="5" fill="#8aa3bf"/><text x="160" y="654">Project Planner</text>
+ <circle cx="140" cy="701" r="5" fill="#8aa3bf"/><text x="160" y="706">IT Support</text>
+</g>
+<path d="M118 739H326" stroke="#243950"/><text x="128" y="772" fill="#728ba5" font-family="Arial" font-size="11" letter-spacing="1.5">AI-ASSISTED WORKFLOW</text>
+<!-- main content -->
+<text x="380" y="390" fill="#f2f7ff" font-family="Arial" font-size="24" font-weight="700">Good morning, welcome back</text>
+<text x="380" y="418" fill="#8da6c0" font-family="Arial" font-size="13">Your work at a glance</text>
+<!-- metric tiles -->
+<g>
+ <rect x="380" y="445" width="250" height="112" rx="13" fill="#122941" stroke="#2a536b"/>
+ <rect x="650" y="445" width="250" height="112" rx="13" fill="#172845" stroke="#3c4f7a"/>
+ <rect x="920" y="445" width="250" height="112" rx="13" fill="#12333a" stroke="#2b6665"/>
+ <rect x="1190" y="445" width="290" height="112" rx="13" fill="#252743" stroke="#554e81"/>
+ <g font-family="Arial">
+ <text x="405" y="478" fill="#8da6c0" font-size="13">Open tasks</text><text x="405" y="528" fill="#f4f8ff" font-size="38" font-weight="700">12</text><text x="550" y="529" fill="#5fe4dd" font-size="12">+3 today</text>
+ <text x="675" y="478" fill="#8da6c0" font-size="13">In progress</text><text x="675" y="528" fill="#f4f8ff" font-size="38" font-weight="700">05</text><text x="820" y="529" fill="#9daeff" font-size="12">Active</text>
+ <text x="945" y="478" fill="#8da6c0" font-size="13">Completed</text><text x="945" y="528" fill="#f4f8ff" font-size="38" font-weight="700">28</text><text x="1090" y="529" fill="#67dfc1" font-size="12">This month</text>
+ <text x="1215" y="478" fill="#8da6c0" font-size="13">AI productivity</text><text x="1215" y="528" fill="#f4f8ff" font-size="38" font-weight="700">Ready</text><text x="1390" y="529" fill="#c1b3ff" font-size="12">Assistant</text>
  </g>
- <text x="1490" y="845" text-anchor="end" fill="#c6d9ed" fill-opacity=".65" font-family="Arial" font-size="18" letter-spacing="4">ZK · AI &amp; AUTOMATION</text>
+</g>
+<!-- task table -->
+<rect x="380" y="580" width="700" height="215" rx="14" fill="#0c1a2c" stroke="#2a4059"/>
+<text x="408" y="616" fill="#edf5ff" font-family="Arial" font-size="17" font-weight="700">Priority tasks</text>
+<text x="408" y="654" fill="#7f9ab5" font-family="Arial" font-size="11" font-weight="700">TASK</text><text x="855" y="654" fill="#7f9ab5" font-family="Arial" font-size="11" font-weight="700">STATUS</text>
+<path d="M405 669H1054M405 718H1054M405 767H1054" stroke="#253a52"/>
+<g font-family="Arial" font-size="13" fill="#dce8f5">
+ <text x="408" y="698">Prepare weekly IT support report</text><text x="408" y="747">Review project milestones</text><text x="408" y="786">Organise office documents</text>
+</g>
+<rect x="852" y="681" width="104" height="25" rx="12" fill="#6b542b" opacity=".6"/><text x="904" y="698" text-anchor="middle" fill="#ffe0a1" font-family="Arial" font-size="11">In progress</text>
+<rect x="852" y="730" width="104" height="25" rx="12" fill="#204f4b" opacity=".8"/><text x="904" y="747" text-anchor="middle" fill="#9af0dc" font-family="Arial" font-size="11">On track</text>
+<!-- activity panel -->
+<rect x="1100" y="580" width="380" height="215" rx="14" fill="#0c1a2c" stroke="#2a4059"/>
+<text x="1128" y="616" fill="#edf5ff" font-family="Arial" font-size="17" font-weight="700">Workspace activity</text>
+<g>
+ <rect x="1128" y="642" width="320" height="8" rx="4" fill="#263a51"/><rect x="1128" y="642" width="236" height="8" rx="4" fill="url(#cyan)"/>
+ <text x="1128" y="676" fill="#91a9c2" font-family="Arial" font-size="12">Project progress</text><text x="1448" y="676" text-anchor="end" fill="#eaf6ff" font-family="Arial" font-size="13" font-weight="700">74%</text>
+ <rect x="1128" y="700" width="320" height="8" rx="4" fill="#263a51"/><rect x="1128" y="700" width="188" height="8" rx="4" fill="#9d8fff"/>
+ <text x="1128" y="734" fill="#91a9c2" font-family="Arial" font-size="12">Weekly tasks</text><text x="1448" y="734" text-anchor="end" fill="#eaf6ff" font-family="Arial" font-size="13" font-weight="700">59%</text>
+ <text x="1128" y="774" fill="#60e2d9" font-family="Arial" font-size="12" font-weight="700">AI tools · Documents · Planning · IT Support</text>
+</g>
+<text x="1510" y="864" text-anchor="end" fill="#7e9ab6" font-family="Arial" font-size="14" letter-spacing="3">ZK · AI &amp; AUTOMATION</text>
 </svg>
