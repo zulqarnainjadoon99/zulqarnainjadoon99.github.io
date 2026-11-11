@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071426"/><stop offset=".55" stop-color="#12395b"/><stop offset="1" stop-color="#171b43"/></linearGradient>
+ <linearGradient id="edge" x2="1"><stop stop-color="#42e3ed"/><stop offset="1" stop-color="#9a8cff"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#39d9ec" stop-opacity=".32"/><stop offset="1" stop-color="#39d9ec" stop-opacity="0"/></radialGradient>
+ </defs>
+ <rect width="1600" height="900" fill="url(#bg)"/><circle cx="1330" cy="180" r="480" fill="url(#glow)"/><circle cx="250" cy="820" r="360" fill="url(#glow)"/>
+ <g opacity=".14" stroke="#9bdcf5"><path d="M0 150H1600M0 300H1600M0 450H1600M0 600H1600M0 750H1600"/><path d="M160 0V900M320 0V900M480 0V900M640 0V900M800 0V900M960 0V900M1120 0V900M1280 0V900M1440 0V900"/></g>
+ <text x="105" y="160" fill="#64e8f0" font-family="Arial,sans-serif" font-size="27" font-weight="700" letter-spacing="8">ZK DIGITAL WORKSPACE</text>
+ <text x="100" y="295" fill="#f5f8ff" font-family="Arial,sans-serif" font-size="92" font-weight="800">AUTOMIND AI</text>
+ <text x="105" y="355" fill="#b9d9f1" font-family="Arial,sans-serif" font-size="30">OFFICE WORKFLOW · PRODUCTIVITY · MANAGEMENT</text>
+ <rect x="100" y="435" width="1400" height="340" rx="30" fill="#08182c" stroke="url(#edge)" stroke-width="3"/>
+ <rect x="135" y="475" width="260" height="255" rx="18" fill="#102b47" stroke="#3bd8e8" stroke-opacity=".65"/>
+ <circle cx="265" cy="555" r="42" fill="#35d7e7" fill-opacity=".18" stroke="#53e3ed" stroke-width="3"/><path d="M265 528v54M238 555h54" stroke="#72edf1" stroke-width="8" stroke-linecap="round"/>
+ <text x="265" y="640" text-anchor="middle" fill="#e9f8ff" font-family="Arial" font-size="23" font-weight="700">WORKSPACE</text>
+ <g>
+ <rect x="435" y="475" width="300" height="115" rx="16" fill="#112d49" stroke="#3bd8e8" stroke-opacity=".55"/><text x="470" y="520" fill="#71e9f0" font-family="Arial" font-size="20">TASKS &amp; PROJECTS</text><path d="M470 550h210" stroke="#d6eaff" stroke-opacity=".4" stroke-width="9" stroke-linecap="round"/>
+ <rect x="765" y="475" width="300" height="115" rx="16" fill="#18264c" stroke="#9a8cff" stroke-opacity=".7"/><text x="800" y="520" fill="#c2b7ff" font-family="Arial" font-size="20">AI ASSISTANT</text><path d="M800 550h205" stroke="#e4ddff" stroke-opacity=".4" stroke-width="9" stroke-linecap="round"/>
+ <rect x="1095" y="475" width="365" height="115" rx="16" fill="#123d45" stroke="#65e0c4" stroke-opacity=".65"/><text x="1130" y="520" fill="#8cf0d7" font-family="Arial" font-size="20">DOCUMENT TOOLS</text><path d="M1130 550h260" stroke="#e0fff5" stroke-opacity=".4" stroke-width="9" stroke-linecap="round"/>
+ <rect x="435" y="615" width="1025" height="115" rx="16" fill="#0d2038" stroke="#6c8bb5" stroke-opacity=".45"/>
+ <path d="M480 690l110-35 105 15 110-55 110 35 120-65 120 30 110-40" fill="none" stroke="url(#edge)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+ <text x="1490" y="845" text-anchor="end" fill="#c6d9ed" fill-opacity=".65" font-family="Arial" font-size="18" letter-spacing="4">ZK · AI &amp; AUTOMATION</text>
+</svg>
